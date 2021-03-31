@@ -11,7 +11,7 @@
 # production
 /build
 # the folders to ignore
-src/AxioxAPI
+src/AxiosApi
 src/contextApi
 src/GoogleKeepnote
 src/IncreDecrementAPP
