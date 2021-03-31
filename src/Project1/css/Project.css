@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* Navbar */
+/* menu active is used in navbar component */
+.menu-active{
+    border-bottom: 2px solid rgb(63, 61, 61);
+    width: fit-content;
+    border-bottom-width: 2px;
+    transition: 0.4s;
+    color: black!important;
+}
+/* menu active is used in navbar component */
+.nav_bg{
+background-color:#fff!important;
+}
+/* hr is used in About or home component */
+ #hr{
+    background-color: black;
+ }
+/* common component */
+.animated_img{
+margin: 20px;
+animation: animeimg 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes animeimg{
+  0%{
+      transform: translateY(10px);
+  }
+  100%{
+       transform: translateX(-10px);
+  }
+}
+/* common component */
+.btn{
+    transition: 0.5s;
+}
+/* common component */
+.main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main-section-1{
+    margin: 20px;
+    max-width: 85%;
+    flex-wrap: wrap;
+}
+/* contact component */
+.contactbox{
+    width: 50%;
+}
+
+/* responsive for laptop */
+@media(min-width:1024px){
+    .navbar-collapse{
+    margin-right: 200px;
+}
+.CARD{
+    width: 354px;
+    height: 318px;
+}
+.footer{
+     margin-top: 300px;
+}
+}
+/* for mobile */
+@media(max-width:430px){
+    .main{
+        text-align: center;
+    }
+}
+/* footer component */
+.footer{
+    position: sticky;
+    bottom: 0px;
+}
+/* Navbar component */
+ .my-Nav{
+     position: sticky;
+     top: 0px;
+     z-index: 2;
+ }
+/* service coponent  card container */
+ .card-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+ }
