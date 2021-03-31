@@ -11,15 +11,15 @@
 # production
 /build
 # the folders to ignore
-/src/AxioxAPI
-/src/contextApi
-/src/GoogleKeepnote
-/src/IncreDecrementAPP
-/src/Netflix
-/src/R0uters
-/src/Slotapp
-/src/ToDoApp
-/src/useEffect
+src/AxioxAPI
+src/contextApi
+src/GoogleKeepnote
+src/IncreDecrementAPP
+src/Netflix
+src/R0uters
+src/Slotapp
+src/ToDoApp
+src/useEffect
 # misc
 .DS_Store
 .env.local
