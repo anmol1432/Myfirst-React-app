@@ -12,7 +12,7 @@
   publish = "build/"
 
   # Default build command.
-  command = "CI = yarn run build"
+  command = "CI= yarn run build"
 
 [[plugins]]
   # Installs the Lighthouse Build Plugin for all deploy contexts
@@ -45,22 +45,13 @@
   # will make the redirect rule take precedence over any existing files.
   force = true
 
-  # Redirect from /old-path?id=123 to /new-path. Each combination of query
-  # params needs to be defined in a separate [[redirects]] block.
-  # More information at https://docs.netlify.com/routing/redirects/redirect-options/#query-parameters
-  query = {id = ":id"}
+
 
   # Redirect based on conditions including browser language, geolocation, 
   # identity role, and/or cookie presence.
   conditions = {Language = ["en"], Country = ["US"]}
 
-  # Sign each request with a value defined in an environment variable
-  signed = "API_SIGNATURE_TOKEN"
 
-  # You can also define custom headers within your redirects blocks.
-  [redirects.headers]
-    X-From = "Netlify"
-    X-Api-Key = "some-api-key-string"
 
 # Role-based redirects do not have a “to” property.
 [[redirects]]
