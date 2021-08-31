@@ -2,6 +2,7 @@ import React from 'react'
 import "./css/Project.css"
 import Nvabar from "./Components/Nvabar";
 import { Route, Switch, Redirect } from "react-router-dom";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Service from "./Components/Service";
